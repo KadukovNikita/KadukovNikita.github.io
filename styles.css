@@ -25,6 +25,7 @@ header h1 {
 }
 
 nav ul {
+    margin-left: 15%;
     list-style-type: none;
     padding: 0;
 }
@@ -95,6 +96,7 @@ main {
     position: absolute;
     top: 0;
     left: -15px;
+    display: none;
     color: #999;
     font-size: 24px;
     line-height: 1;
