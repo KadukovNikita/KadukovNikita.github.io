@@ -25,7 +25,6 @@ header h1 {
 }
 
 nav ul {
-    margin-left: 15%;
     list-style-type: none;
     padding: 0;
 }
@@ -53,6 +52,7 @@ main {
 }
 
 #tools {
+    margin-left: 15%;
     margin: 0 auto;
     max-width: 800px;
 }
