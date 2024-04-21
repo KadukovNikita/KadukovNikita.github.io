@@ -1,13 +1,27 @@
+/* Общие стили */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 /* Стили для шапки */
 header {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 20px 0;
     text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 36px;
 }
 
 nav ul {
@@ -23,15 +37,40 @@ nav ul li {
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
 }
 
 /* Стили для основного контента */
 main {
     padding: 20px;
+    text-align: center;
 }
 
-section {
-    margin-bottom: 30px;
+#tools {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#tools h2 {
+    font-size: 32px;
+    color: #333;
+}
+
+#tools ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+#tools ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #666;
 }
 
 /* Стили для футера */
@@ -39,5 +78,28 @@ footer {
     background-color: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icons .icon {
+    margin-right: 10px;
+}
+
+.social-icons .icon img {
+    width: 40px;
+    height: 40px;
 }
