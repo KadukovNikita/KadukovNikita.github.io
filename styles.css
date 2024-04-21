@@ -87,10 +87,6 @@ main {
     transform: translateY(-50%);
 }
 
-#tools ul li:first-child::before {
-    display: none; /* Убираем линию перед первым элементом */
-}
-
 #tools ul li::after {
     content: "●"; /* Здесь можно изменить маркер на звездочку или другой символ */
     position: absolute;
