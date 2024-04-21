@@ -69,8 +69,42 @@ main {
 
 #tools ul li {
     font-size: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #666;
+    position: relative;
+}
+
+/* Линии и маркеры */
+#tools ul li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    width: 10px;
+    height: 2px;
+    background-color: #ccc;
+    transform: translateY(-50%);
+}
+
+#tools ul li:first-child::before {
+    display: none; /* Убираем линию перед первым элементом */
+}
+
+#tools ul li::after {
+    content: "●"; /* Здесь можно изменить маркер на звездочку или другой символ */
+    position: absolute;
+    top: 0;
+    left: -15px;
+    color: #999;
+    font-size: 24px;
+    line-height: 1;
+    transform: translateY(-50%);
+}
+
+/* Подсветка при наведении */
+#tools ul li:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
 }
 
 /* Стили для футера */
